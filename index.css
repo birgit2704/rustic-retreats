@@ -5,7 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   background: #d8eacb;
   font-family: "Montserrat", sans-serif;
@@ -42,8 +44,7 @@ header {
 }
 
 nav ul {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   position: fixed;
   width: 100%;
   top: 0;
@@ -56,7 +57,7 @@ nav ul {
 
 nav ul li a {
   color: black;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 1em;
   display: block;
@@ -68,12 +69,6 @@ nav ul li a {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.open-nav {
-  visibility: unset;
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .forest-hero {
@@ -128,14 +123,14 @@ ul.featured-cabins li {
 
 .cabin-title {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .cabin-desc,
 ul.features li p,
 .left p {
   line-height: 1.9em;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   margin-bottom: 2em;
 }
 
@@ -183,7 +178,7 @@ ul.features li p {
 
 .main-quote {
   font-family: "Playfair Display", serif;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-style: italic;
   margin-bottom: 0.5em;
 }
@@ -214,7 +209,7 @@ p.test-desc {
 
 p.test-auth {
   font-weight: bold;
-  font-size: 0.85em;
+  font-size: 0.85rem;
 }
 
 .last-container {
@@ -252,7 +247,7 @@ p.test-auth {
   }
 
   ul.nav li a {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     padding: 0 1em;
     font-weight: normal;
   }
@@ -280,5 +275,94 @@ p.test-auth {
     width: 100%;
     height: 50%;
     object-fit: cover;
+  }
+}
+@media (min-width: 650px) {
+  ul.features {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3em;
+  }
+}
+
+@media (min-width: 1100px) {
+  :root {
+    font-size: 18px;
+  }
+  .subtitle {
+    margin: 0;
+    padding: 0;
+  }
+  .flex {
+    display: flex;
+    margin: 4em 2em;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .left.main-copy {
+    flex: 0 0 25%;
+    text-align: left;
+    padding: 2em;
+  }
+  ul.featured-cabins {
+    margin: 2em;
+  }
+
+  ul.featured-cabins li {
+    margin-bottom: 0em !;
+  }
+
+  .main-quote {
+    margin-top: 2em;
+    font-size: 2.5rem;
+  }
+  .main-cite {
+    margin-bottom: 5em;
+    font-size: 1.5rem;
+  }
+
+  .secondary {
+    justify-content: space-between;
+    padding: 0 2.5em;
+  }
+  .left.bio {
+    justify-content: flex-start;
+    flex: 1 0 40%;
+    text-align: left;
+
+    font-size: 2rem;
+    align-items: flex-start;
+  }
+  .left.bio p {
+    font-size: 1rem;
+  }
+  .left.bio h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  ul.testimonials {
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+    display: flex;
+    flex: 1 0 40%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .testimonials li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: white;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .test-auth {
+    text-align: left;
+  }
+  .test-img {
+    margin: 1em;
   }
 }
