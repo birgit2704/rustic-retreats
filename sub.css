@@ -43,7 +43,11 @@ ul.breadcrumbs li a {
 
 @media (min-width: 550px) {
   ul.featured-cabins li {
-    margin-bottom: -2.5em;
+    margin-bottom: -5em;
+  }
+  ul.featured-cabins {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    justify-content: center;
   }
 }
 
@@ -68,6 +72,16 @@ ul.breadcrumbs li a {
     width: 45%;
   }
   .main-copy {
+    margin-left: 2em;
+  }
+  ul.featured-cabins li {
+    margin-bottom: 2em;
+    margin-left: 0;
+  }
+  ul.featured-cabins {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-left: 2em;
   }
 }

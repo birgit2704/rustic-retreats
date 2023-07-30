@@ -92,7 +92,7 @@ nav ul li a {
 
 h1 span {
   display: block;
-  /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
 .cta {
@@ -306,11 +306,12 @@ p.test-auth {
     padding: 2em;
   }
   ul.featured-cabins {
-    margin: 2em;
+    margin-bottom: 1em;
   }
 
   ul.featured-cabins li {
     margin-bottom: -3em;
+    margin-right: 3em;
   }
 
   .main-quote {
