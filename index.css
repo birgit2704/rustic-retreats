@@ -306,11 +306,15 @@ p.test-auth {
     padding: 2em;
   }
   ul.featured-cabins {
-    margin-bottom: 1em;
+    margin-bottom: -6em;
+    margin-right: 3em;
+  }
+  ul.featured-cabins {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   ul.featured-cabins li {
-    margin-bottom: -3em;
+    margin-bottom: 0;
     margin-right: 3em;
   }
 
