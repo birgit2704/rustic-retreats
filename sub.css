@@ -7,3 +7,67 @@ body {
   background-size: cover;
   height: 70vh;
 }
+
+.bread-wrapper {
+  display: grid;
+  justify-content: center;
+  margin: 3em 0 0;
+}
+
+ul.breadcrumbs {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+ul.breadcrumbs li a {
+  color: black;
+  margin-right: 0.5em;
+  font-weight: bold;
+}
+
+.sub-desc {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-copy p {
+  padding: 1em 0.5em 2em;
+}
+.cabin-cta span {
+  color: black;
+}
+
+.cabin-cta:after {
+  background: black;
+}
+
+@media (min-width: 550px) {
+  ul.featured-cabins li {
+    margin-bottom: -2.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .bread-wrapper,
+  .breadcrumbs ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  h1 span {
+    text-align: start;
+  }
+  .main-copy p {
+    text-align: start;
+    padding-left: 0;
+    margin-left: 0;
+    width: 45%;
+  }
+  .main-copy {
+    margin-left: 2em;
+  }
+}

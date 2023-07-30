@@ -310,7 +310,7 @@ p.test-auth {
   }
 
   ul.featured-cabins li {
-    margin-bottom: 0em !;
+    margin-bottom: -3em;
   }
 
   .main-quote {
