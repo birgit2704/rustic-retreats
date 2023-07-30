@@ -121,7 +121,8 @@ ul.featured-cabins li {
 
 .cabin-img {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 3/4;
   object-fit: cover;
 }
 
@@ -230,7 +231,54 @@ p.test-auth {
 }
 
 @media (min-width: 550px) {
-  .logo {
-    color: red;
+  .menu,
+  .exit {
+    display: none;
+  }
+
+  header {
+    padding: 1em;
+  }
+
+  ul.nav {
+    visibility: unset;
+    opacity: 1;
+    background: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    height: auto;
+  }
+
+  ul.nav li a {
+    font-size: 0.9em;
+    padding: 0 1em;
+    font-weight: normal;
+  }
+
+  ul.nav li:last-child a {
+    padding-right: 0;
+  }
+
+  ul.nav .active a {
+    font-weight: bold;
+  }
+
+  ul.nav .res a {
+    color: #72a84a;
+    font-weight: bold;
+  }
+
+  ul.featured-cabins {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3em;
+  }
+  .cabin-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
   }
 }
