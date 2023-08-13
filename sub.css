@@ -220,3 +220,23 @@ select {
   font-size: 1rem;
   border: none;
 }
+
+/* FAQ Page */
+
+.main-copy-faq {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 1em;
+}
+.sub-hero-faq {
+  background-image: url(imgs/forest.jpg);
+  background-size: 100vh cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 600px) {
+  .main-copy-faq {
+    font-size: 1.2rem;
+  }
+}
