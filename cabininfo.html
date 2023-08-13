@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🛖 rustic.retreats</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="sub.css" />
+  </head>
+  <body>
+    <div class="sub-hero">
+      <div class="wrapper no-padding">
+        <header>
+          <a href="index.html" class="logo">rustic.retreats</a>
+
+          <nav>
+            <img
+              src="imgs/menu.svg"
+              class="menu"
+              id="menu-btn"
+              alt="open menu"
+            />
+
+            <ul class="nav" id="nav">
+              <li class="exit" id="exit-btn">
+                <a href="#"><img src="imgs/exit.svg" alt="" /></a>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cabins.html">Cabins</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li class="res"><a href="#">Reservations</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="wrapper hero-cabins-info">
+        <div class="main-copy">
+          <div class="bread-wrapper">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cabins.html">> Our Cabins</a></li>
+              <li class="active">> Cabin Info</li>
+            </ul>
+          </div>
+
+          <!-- cabin info here -->
+          <div class="cabin-info">
+            <h1>
+              <span>Dancing Daisies</span>
+
+              <span class="small"
+                >Delightful cabin surrounded by dancing daisies.</span
+              >
+            </h1>
+            <div class="cabin-info-container">
+              <img src="imgs/cabin9.jpg" class="cabin-info-img" alt="cabin" />
+              <div class="cabin-info-text-container">
+                <p class="cabin-info-desc">
+                  Finally, find yourself surrounded by dancing daisies in this
+                  delightful cabin, where joy and calm effortlessly converge,
+                  creating a space that feels both invigorating and peaceful.
+                </p>
+                <p class="cabin-info-text">
+                  <strong>Country: </strong>Netherlands
+                </p>
+                <p class="cabin-info-text"><strong>Area: </strong>Veluwe</p>
+                <p class="cabin-info-text">
+                  <strong>Price per night: </strong>68 EUR
+                </p>
+                <p class="cabin-info-text">
+                  <strong>Maximum number of guests: </strong>7
+                </p>
+              </div>
+            </div>
+            <a href="#" class="cta"> Reserve </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

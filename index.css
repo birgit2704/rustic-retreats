@@ -306,7 +306,7 @@ p.test-auth {
     padding: 2em;
   }
   ul.featured-cabins {
-    margin-bottom: -6em;
+    margin-bottom: -5em;
     margin-right: 3em;
   }
   ul.featured-cabins {
@@ -369,5 +369,13 @@ p.test-auth {
   }
   .test-img {
     margin: 1em;
+  }
+  .fern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+    opacity: 0.1;
   }
 }

@@ -25,6 +25,10 @@ ul.breadcrumbs li a {
   font-weight: bold;
 }
 
+.cabins-desc {
+  line-height: 1.6;
+}
+
 .sub-desc {
   width: 80%;
   margin: 0 auto;
@@ -83,5 +87,90 @@ ul.breadcrumbs li a {
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 2em;
+  }
+}
+
+/* CABINS INFO PAGE */
+.hero-cabins-info {
+  background: url("imgs/forest.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.hero-cabins-info ul.breadcrumbs li a {
+  color: white;
+}
+
+.cabin-info-img {
+  width: 70%;
+}
+
+.cabin-info p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.cabin-info p.cabin-info-desc {
+  line-height: 1.6;
+  padding: 2em 0.5em;
+}
+.small {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0.7em;
+}
+.cabin-info a {
+  margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+  .cabin-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .cabin-info-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-copy p.cabin-info-desc {
+    width: 100%;
+    padding-left: 0;
+  }
+  .main-copy p.cabin-info-text {
+    width: 100%;
+    padding-left: 0;
+  }
+  .cabin-info-img {
+    width: 40vw;
+    object-fit: cover;
+  }
+}
+@media (min-width: 900px) {
+  .cabin-info {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 2em;
+  }
+  .cabin-info-container {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .cabin-info-img {
+    width: 40vw;
+    max-height: 400px;
+    max-width: 500px;
+  }
+  .cabin-info-desc {
+    max-width: 600px;
   }
 }
