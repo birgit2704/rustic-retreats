@@ -91,7 +91,7 @@ ul.breadcrumbs li a {
 }
 
 /* CABINS INFO PAGE */
-.hero-cabins-info {
+.sub-hero-info {
   background: url("imgs/forest.jpg");
   background-size: cover;
   color: white;
@@ -111,6 +111,10 @@ ul.breadcrumbs li a {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+.cabin-info h1 {
+  color: white;
+  margin-bottom: 0;
+}
 
 .cabin-info p.cabin-info-desc {
   line-height: 1.6;
@@ -120,7 +124,8 @@ ul.breadcrumbs li a {
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 500;
-  margin-top: 0.7em;
+
+  padding-bottom: 2em;
 }
 .cabin-info a {
   margin-top: 2em;

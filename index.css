@@ -152,6 +152,8 @@ ul.features li p,
 .cabin-cta span {
   color: white;
   font-weight: bold;
+  width: 100%;
+  text-align: start;
 }
 
 .cabin-cta img {

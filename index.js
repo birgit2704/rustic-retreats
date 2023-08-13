@@ -34,10 +34,10 @@ const threeCabins = document.getElementById("three-featured-cabins");
 if (threeCabins) {
   const threeCabinsHtml = cabins
     .slice(0, 3)
-    .map(({ image, name, longDescription }) => {
+    .map(({ id, image, name, longDescription }) => {
       return `
-  <li>
-    <a href="#"
+  <li id="${id}" >
+    <a name="cbn" href="cabininfo.html"
       ><img src="${image}" class="cabin-img" alt="cabin"
     /></a>
     <p class="cabin-title">${name}</p>
@@ -45,7 +45,7 @@ if (threeCabins) {
     ${longDescription}
     </p>
 
-    <a href="#" class="cabin-cta">
+    <a name="cbn" href="cabininfo.html" class="cabin-cta">
       <span>Cabin Info</span>
       <img src="imgs/arrows.svg" alt="arrow" />
     </a>
@@ -63,17 +63,17 @@ const allCabins = document.getElementById("featured-cabins");
 
 if (allCabins) {
   const cabinsHtml = cabins
-    .map(({ image, name, shortDescription }) => {
+    .map(({ id, image, name, shortDescription }) => {
       return `
-    <li>
-      <a href="#"><img src="${image}" class="cabin-img" /></a>
+    <li id="${id}" >
+      <a name="cbn" href="cabininfo.html"><img src="${image}" class="cabin-img" /></a>
 
       <p class="cabin-title">${name}</p>
       <p class="cabin-desc">
         ${shortDescription}
       </p>
 
-      <a href="#" class="cabin-cta">
+      <a name="cbn" href="cabininfo.html" class="cabin-cta">
         <span class="black">Cabin Info</span>
         <img src="imgs/arrows-black.svg" />
       </a>
@@ -84,3 +84,14 @@ if (allCabins) {
 
   allCabins.innerHTML = cabinsHtml;
 }
+
+// RENDER CABIN DETAIL
+
+document.body.addEventListener("click", (e) => {
+  if (e.target.parentElement.name === "cbn") {
+    const targetId = e.target.closest("li[id]").id;
+    localStorage.setItem("cabinId", targetId);
+  }
+});
+
+// => to continue go to cabininfo.js
