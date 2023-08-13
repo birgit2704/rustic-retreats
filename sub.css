@@ -163,9 +163,9 @@ ul.breadcrumbs li a {
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 2em;
+    margin: 0 auto;
   }
+
   .cabin-info-container {
     justify-content: space-between;
     gap: 20px;
@@ -178,4 +178,45 @@ ul.breadcrumbs li a {
   .cabin-info-desc {
     max-width: 600px;
   }
+}
+
+/* RESERVATIONS PAGE */
+.sub-hero-reservations {
+  background-image: url(imgs/forest-bg-2.jpg);
+  background-size: 100vh cover;
+  background-repeat: no-repeat;
+}
+
+.res-h1 {
+  text-align: center;
+  margin-left: -1em;
+}
+
+form {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  margin: 0 auto;
+  /* align-items: start; */
+}
+label {
+  align-self: start;
+  font-weight: bold;
+}
+input,
+select {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+select {
+  height: 2.6rem;
+}
+
+.submit {
+  align-self: center;
+  font-size: 1rem;
+  border: none;
 }

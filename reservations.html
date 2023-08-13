@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🛖 rustic.retreats</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="sub.css" />
+  </head>
+  <body>
+    <div class="wrapper sub-hero-reservations">
+      <div class="no-padding">
+        <header>
+          <a href="index.html" class="logo">rustic.retreats</a>
+
+          <nav>
+            <img
+              src="imgs/menu.svg"
+              class="menu"
+              id="menu-btn"
+              alt="open menu"
+            />
+
+            <ul class="nav" id="nav">
+              <li class="exit" id="exit-btn">
+                <a href="#"><img src="imgs/exit.svg" /></a>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="cabins.html">Cabins</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li class="res"><a href="#">Reservations</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div>
+        <div class="main-copy">
+          <h1 class="res-h1">Reserve your dream cabin</h1>
+        </div>
+        <form id="reservations-form">
+          <label for="name">Full name</label>
+          <input type="text" required />
+          <label for="email">Email</label>
+          <input type="email" required />
+          <label for="cabin">Select your cabin</label>
+          <select name="cabin" id="select-cabin" required>
+            <option value="">...</option>
+            <!-- options here -->
+          </select>
+          <label for="from">From</label>
+          <input type="date" name="from" id="from" required />
+          <label for="to">To</label>
+          <input type="date" name="to" id="to" required />
+          <input type="submit" class="submit cta" value="Reserve" />
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./reservations.js" type="module"></script>
+  </body>
+</html>

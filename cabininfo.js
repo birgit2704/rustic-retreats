@@ -1,7 +1,5 @@
 import cabins from "./data.js";
 
-console.log("hey");
-
 renderCabin();
 
 function renderCabin() {
@@ -19,7 +17,6 @@ function renderCabin() {
     area,
     maxNoGuests,
   } = cabins[selectedCabinIndex];
-  console.log(name);
 
   document.getElementById("idi").innerHTML = `
   <h1>${name}</h1>
@@ -42,6 +39,6 @@ function renderCabin() {
     </p>
   </div>
 </div>
-<a href="#" class="cta"> Reserve </a>
+<a href="reservations.html" class="cta"> Reserve </a>
     `;
 }
